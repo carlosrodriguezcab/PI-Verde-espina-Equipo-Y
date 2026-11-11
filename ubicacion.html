@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ubicación · Verde Espina</title>
+<meta name="description" content="Dónde estamos y horarios de atención.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="ubicacion">
+<div id="site-header"></div>
+<main>
+
+<section class="page-head"><div class="wrap"><h1>Ubicación física</h1><p>Visítanos o pide tu entrega a domicilio.</p></div></section>
+<!-- TODO: la dirección del mapa se cambia en js/config.js (direccion y mapa) -->
+<section class="sec"><div class="wrap two" style="align-items:start">
+  <div class="map" id="mapBox" data-reveal></div>
+  <div class="info-list">
+    <div class="info" data-reveal></div>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/art.js"></script>
+<script src="js/products.js"></script>
+<script src="js/site.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/ubicacion.js"></script>
+</body>
+</html>

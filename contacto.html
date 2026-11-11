@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto · Verde Espina</title>
+<meta name="description" content="Escríbenos o síguenos en redes sociales.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacto">
+<div id="site-header"></div>
+<main>
+
+<section class="page-head"><div class="wrap"><h1>Contáctanos</h1><p>Te respondemos lo antes posible.</p></div></section>
+<!-- Formulario de contacto. TODO: correo, WhatsApp y redes se cambian en js/config.js -->
+<section class="sec"><div class="wrap contact-grid">
+  <div class="form-card" data-reveal id="formCard">
+    <form id="cForm" novalidate>
+      <label>Nombre<input name="nombre" autocomplete="name"><em class="err"></em></label>
+      <label>Correo electrónico<input name="correo" type="email" autocomplete="email"><em class="err"></em></label>
+      <label>Asunto<select name="asunto"><option>Quiero información</option><option>Pedido especial</option><option>Queja o sugerencia</option></select></label>
+      <label>Mensaje<textarea name="msg" maxlength="500"></textarea><em class="err"></em></label>
+      <button class="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+  <aside class="info-list" id="cInfo" data-reveal></aside>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/art.js"></script>
+<script src="js/products.js"></script>
+<script src="js/site.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/contacto.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tienda · Verde Espina</title>
+<meta name="description" content="Más de 20 cactus, suculentas, macetas y kits.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="tienda">
+<div id="site-header"></div>
+<main>
+
+<!-- Tienda. TODO: los productos se cambian en js/products.js -->
+<section class="page-head"><div class="wrap"><h1>Tienda virtual</h1><p>Cactus, suculentas, macetas y kits para toda la casa.</p></div></section>
+<section class="wrap">
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Categorías">
+      <button class="chip" data-tipo="todos">Todos</button><button class="chip" data-tipo="cactus">Cactus</button>
+      <button class="chip" data-tipo="suculenta">Suculentas</button><button class="chip" data-tipo="maceta">Macetas</button><button class="chip" data-tipo="kit">Kits</button>
+    </div>
+    <div class="filters">
+      <div class="field search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.300-4.300"/></svg><input id="q" type="search" placeholder="Buscar producto…" aria-label="Buscar producto"></div>
+      <div class="field"><select id="luz" aria-label="Filtrar por luz"><option value="todas">Toda la luz</option><option>Sol directo</option><option>Semisombra</option><option>Sombra</option></select></div>
+      <div class="field"><select id="orden" aria-label="Ordenar"><option value="destacados">Destacados</option><option value="menor">Precio: menor a mayor</option><option value="mayor">Precio: mayor a menor</option><option value="valorados">Mejor valorados</option><option value="nombre">Nombre A-Z</option></select></div>
+    </div>
+  </div>
+  <p class="res-count" id="resCount" aria-live="polite"></p>
+  <div class="grid" id="grid"></div>
+  <div class="no-res" id="noRes" hidden><h3>No encontramos productos</h3><p>Prueba con otra búsqueda o quita los filtros.</p><button class="btn btn-primary" id="resetF" style="margin-top:1rem">Quitar filtros</button></div>
+</section>
+<div style="height:3rem"></div>
+</main>
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/art.js"></script>
+<script src="js/products.js"></script>
+<script src="js/site.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
