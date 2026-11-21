@@ -85,6 +85,7 @@ section.sec{padding:clamp(3rem,7vw,5.5rem) 0}
 .slide p{font-size:1.15rem;color:var(--muted);max-width:30ch;margin-bottom:1.4rem}
 .slide-art{display:grid;place-items:center}
 .slide-art svg,.slide-art img{width:min(420px,100%);border-radius:24px}
+.slide-art img{width:auto;max-width:100%;height:min(430px,80vh - 8rem);aspect-ratio:3/4;object-fit:cover}
 .slide.active .slide-art>*{animation:floaty 5s ease-in-out infinite,zoomIn .9s both}
 @keyframes floaty{50%{translate:0 -12px}}
 @keyframes zoomIn{from{opacity:0;scale:.82}to{opacity:1;scale:1}}
@@ -336,9 +337,9 @@ input.bad,textarea.bad{border-color:#D5503F!important}
 .msg.bot{background:#fff;border-bottom-left-radius:4px;align-self:flex-start;box-shadow:0 2px 6px rgba(0,0,0,.06)}
 .msg.me{background:var(--green);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
 .msg .btn{margin-top:.6rem;padding:.45rem .9rem;font-size:.85rem;display:flex}
-.dots{display:inline-flex;gap:4px;position:static;translate:none}
-.dots i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:blink 1s infinite}
-.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+.msg .dots{display:inline-flex;gap:4px;position:static;translate:none}
+.msg .dots i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:blink 1s infinite}
+.msg .dots i:nth-child(2){animation-delay:.2s}.msg .dots i:nth-child(3){animation-delay:.4s}
 @keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:1}}
 .chat-chips{display:flex;gap:.4rem;overflow-x:auto;padding:.5rem .8rem;background:var(--cream)}
 .chat-chips button{white-space:nowrap;padding:.3rem .8rem;border-radius:999px;border:1.5px solid var(--green2);color:var(--green);font-weight:700;font-size:.82rem}
@@ -358,6 +359,7 @@ input.bad,textarea.bad{border-color:#D5503F!important}
   .slide{grid-template-columns:1fr;text-align:center;align-content:center;gap:1rem;padding-top:1rem}
   .slide p{margin-inline:auto}
   .slide-art svg,.slide-art img{width:min(250px,60vw)}
+  .slide-art img{height:auto;width:min(210px,52vw)}
   .s-arrow{display:none}
   .two,.contact-grid,.det,.footer-grid{grid-template-columns:1fr}
   .footer-grid{gap:1.6rem}

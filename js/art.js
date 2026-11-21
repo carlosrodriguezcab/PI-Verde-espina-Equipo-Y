@@ -97,7 +97,7 @@
   const mini = (cx, cy, s, planta, color, maceta, patron) =>
     `<g transform="translate(${cx} ${cy}) scale(${s}) translate(-100 -152)">${plantSVG(planta, color)}${pot(60, 120, 80, 64, maceta, patron)}</g>`;
 
-  const TINT = { cactus: '#DCEBDD', suculenta: '#E5EFD6', maceta: '#F6E3D4', kit: '#F3EBD6' };
+  const TINT = { cactus: '#DCEBDD', suculenta: '#E5EFD6', maceta: '#F6E3D4', interior: '#DDEAD8', kit: '#F3EBD6' };
 
   function product(p) {
     let inner = '';

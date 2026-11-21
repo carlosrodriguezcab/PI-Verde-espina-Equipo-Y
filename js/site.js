@@ -152,18 +152,17 @@
   }
 
   /* ---------- Chat con respuestas programadas ----------
-   TODO: abajo, en KB, cambien las respuestas por datos reales del negocio (precios, pagos, envíos).
-   Cada línea tiene las palabras clave 'k' y la respuesta 'r'. Pueden agregar las que quieran. */
+   Cada línea de KB tiene las palabras clave 'k' y la respuesta 'r'. */
   const KB = [
     { k: ['hola', 'buenas', 'buenos', 'hey'], r: `¡Hola! 🌵 Soy el asistente de ${S.nombre}. Puedo ayudarte con precios, envíos, cuidados, horarios y pedidos.` },
     { k: ['envio', 'envío', 'entrega', 'domicilio', 'paqueteria'], r: `Hacemos entregas a domicilio. El envío cuesta ${money(S.envio.costo)} y es gratis desde ${money(S.envio.gratisDesde)} de compra.` },
-    { k: ['precio', 'cuesta', 'costo', 'cuanto', 'cuánto'], r: 'Nuestras piezas van desde $40 en macetas pequeñas hasta $320 en kits de regalo. Mira todo en la tienda.' },
+    { k: ['precio', 'cuesta', 'costo', 'cuanto', 'cuánto'], r: 'Nuestras piezas van desde $15 en macetas pequeñas hasta $150 en plantas grandes. Mira todo en la tienda.' },
     { k: ['horario', 'abren', 'cierran', 'hora'], r: `Nuestro horario es: ${S.horario}.` },
     { k: ['donde', 'dónde', 'ubicacion', 'ubicación', 'direccion', 'dirección', 'mapa'], r: `Estamos en ${S.direccion}. En la página Ubicación encuentras el mapa.` },
     { k: ['riego', 'regar', 'agua', 'cuidado', 'cuidar'], r: 'Regla básica: riega solo cuando la tierra esté totalmente seca y dale mucha luz. Cada producto indica su frecuencia de riego en el detalle.' },
     { k: ['pago', 'pagar', 'tarjeta', 'efectivo', 'transferencia'], r: 'Por ahora el pedido se confirma por WhatsApp y el pago se acuerda ahí (efectivo o transferencia).' },
-    { k: ['regalo', 'kit'], r: 'Los kits son ideales para regalar: incluyen 3 plantas con maceta y guía de cuidados. Están en la tienda, categoría Kits.' },
-    { k: ['maceta', 'pintada'], r: 'Todas nuestras macetas están pintadas a mano, por eso cada una es ligeramente diferente.' },
+    { k: ['regalo', 'interior'], r: 'Para regalar te recomendamos las plantas de interior, como la begonia o la cheflera. Las encuentras en la tienda, categoría Plantas de interior.' },
+    { k: ['maceta', 'macetas'], r: 'Tenemos macetas de plástico y de cemento en distintos tamaños y colores, desde $15. Las encuentras en la tienda, categoría Macetas.' },
     { k: ['whatsapp', 'humano', 'persona', 'asesor', 'contacto'], r: 'Con gusto te atendemos por WhatsApp. Usa el botón de abajo para abrir la conversación.' },
     { k: ['gracias', 'adios', 'adiós'], r: '¡Gracias a ti! Que tengas un día muy verde 🌱' }
   ];
