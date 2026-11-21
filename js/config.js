@@ -32,7 +32,7 @@ window.SITE = {
     { titulo: "Macetas para cada planta",
       texto: "Macetas de distintos tamaños, formas y colores para darle su lugar a cada planta.",
       cta: "Ver macetas", href: "tienda.html?tipo=maceta", producto: "m02", foto: "img/productos/m02.jpg" },
-    { titulo: "Plantas para dentro de casa",
+    { titulo: "Plantas de interior",
       texto: "Begonias, chefleras y más plantas de interior para darle vida a cualquier espacio.",
       cta: "Ver plantas de interior", href: "tienda.html?tipo=interior", producto: "p01", foto: "img/productos/p01.jpg" }
   ],
